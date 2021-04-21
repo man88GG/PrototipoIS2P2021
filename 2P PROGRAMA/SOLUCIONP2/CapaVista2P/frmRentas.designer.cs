@@ -41,9 +41,9 @@ namespace CapaVista
             this.CodigoC = new System.Windows.Forms.ComboBox();
             this.TxtCosto = new System.Windows.Forms.TextBox();
             this.TxtDias = new System.Windows.Forms.TextBox();
-            this.CmbRentas1 = new System.Windows.Forms.ComboBox();
             this.LblNacimiento = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CmbRentas1 = new System.Windows.Forms.ComboBox();
             this.CmbRentas2 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -180,15 +180,6 @@ namespace CapaVista
             this.TxtDias.Size = new System.Drawing.Size(239, 22);
             this.TxtDias.TabIndex = 96;
             // 
-            // CmbRentas1
-            // 
-            this.CmbRentas1.FormattingEnabled = true;
-            this.CmbRentas1.Location = new System.Drawing.Point(313, 74);
-            this.CmbRentas1.Name = "CmbRentas1";
-            this.CmbRentas1.Size = new System.Drawing.Size(311, 24);
-            this.CmbRentas1.TabIndex = 103;
-            this.CmbRentas1.Visible = false;
-            // 
             // LblNacimiento
             // 
             this.LblNacimiento.AutoSize = true;
@@ -204,10 +195,10 @@ namespace CapaVista
             // 
             this.groupBox1.Controls.Add(this.CmbRentas2);
             this.groupBox1.Controls.Add(this.LblFechaNac);
+            this.groupBox1.Controls.Add(this.CmbRentas1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.TxtCosto);
             this.groupBox1.Controls.Add(this.CodigoC);
-            this.groupBox1.Controls.Add(this.CmbRentas1);
             this.groupBox1.Controls.Add(this.LblNacimiento);
             this.groupBox1.Controls.Add(this.DtpRenta);
             this.groupBox1.Controls.Add(this.LblCodigo);
@@ -219,14 +210,21 @@ namespace CapaVista
             this.groupBox1.TabIndex = 129;
             this.groupBox1.TabStop = false;
             // 
+            // CmbRentas1
+            // 
+            this.CmbRentas1.FormattingEnabled = true;
+            this.CmbRentas1.Location = new System.Drawing.Point(313, 76);
+            this.CmbRentas1.Name = "CmbRentas1";
+            this.CmbRentas1.Size = new System.Drawing.Size(311, 24);
+            this.CmbRentas1.TabIndex = 130;
+            // 
             // CmbRentas2
             // 
             this.CmbRentas2.FormattingEnabled = true;
-            this.CmbRentas2.Location = new System.Drawing.Point(313, 74);
+            this.CmbRentas2.Location = new System.Drawing.Point(313, 76);
             this.CmbRentas2.Name = "CmbRentas2";
             this.CmbRentas2.Size = new System.Drawing.Size(311, 24);
-            this.CmbRentas2.TabIndex = 130;
-            this.CmbRentas2.Visible = false;
+            this.CmbRentas2.TabIndex = 131;
             // 
             // frmRentas
             // 
@@ -261,9 +259,9 @@ namespace CapaVista
         private System.Windows.Forms.ComboBox CodigoC;
         private System.Windows.Forms.TextBox TxtCosto;
         private System.Windows.Forms.TextBox TxtDias;
-        private System.Windows.Forms.ComboBox CmbRentas1;
         private System.Windows.Forms.Label LblNacimiento;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox CmbRentas2;
+        private System.Windows.Forms.ComboBox CmbRentas1;
     }
 }

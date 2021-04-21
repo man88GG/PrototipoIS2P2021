@@ -26,12 +26,11 @@ namespace CapaVista
             funcTipo();
             funcJuego();
             funcDvD();
-            CodigoC.SelectedIndex = +1;
+ 
             CodigoC.DropDownStyle = ComboBoxStyle.DropDownList;
             CmbRentas1.DropDownStyle = ComboBoxStyle.DropDownList;
-            CmbRentas1.SelectedIndex = +1;
             CmbRentas2.DropDownStyle = ComboBoxStyle.DropDownList;
-            CmbRentas2.SelectedIndex = +1;
+            
         }
 
 
@@ -72,7 +71,8 @@ namespace CapaVista
                 
                 LblCodigo.Text = "Nombre del Juego";
                 CmbRentas2.Visible = true;
-                
+                CmbRentas1.Visible = false;
+
             }
         }
 
@@ -81,10 +81,10 @@ namespace CapaVista
             if (RbtnDvd.Checked == true)
             {
 
-   
                 LblCodigo.Text = "Nombre del DvD";
                 CmbRentas1.Visible = true;
-               
+                CmbRentas2.Visible = false;
+
             }
         }
 
@@ -104,14 +104,7 @@ namespace CapaVista
 
         }
 
-        //Función de Bloqueo
-        private void funcBloqueo()
-        {
-
-            groupBox1.Enabled = false;
-            
   
-        }
 
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
@@ -121,7 +114,7 @@ namespace CapaVista
             {
 
                 //segunda verificación de datos de cajas de texto vacias
-                if (TxtDias.Text == "" || TxtCosto.Text == "" || (RbtnJuego.Checked == false && RbtnJuego.Checked == false)) { MessageBox.Show("ADVERTENCIA: Uno o más campos están vacíos.", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
+                if (TxtDias.Text == "" || TxtCosto.Text == "" ) { MessageBox.Show("ADVERTENCIA: Uno o más campos están vacíos.", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
                 else
                 {
 
@@ -135,26 +128,19 @@ namespace CapaVista
                         //Se da a las variables los valores correspondientes para enviarse a la capa Controlador
                         //datos Pasaporte
 
-
-
-
-
                         Codigo_C = CodigoC.SelectedIndex + 1; ;
                         Codigo_P = CmbRentas1.SelectedIndex + 1; ;
                         dias = Convert.ToInt32(TxtDias.Text);
                         costo = TxtCosto.Text;
                         fecha = DtpRenta.Value.Date.ToShortDateString();
 
-
                         Cont.funcInsertarRentaD(Codigo_C, Codigo_P, dias, costo, fecha);
                         MessageBox.Show("Se ha ingresado la Renta con Éxito", "INGRESO Renta", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         funcLimpieza();
-                        funcBloqueo();
+                       
 
-                        //envío de datos hacia capa Controlador
-
-
+                        
 
                     }//fin elseif Pregunta
 
@@ -165,23 +151,17 @@ namespace CapaVista
             if (RbtnJuego.Checked == true)
             {
                 //segunda verificación de datos de cajas de texto vacias
-                if (TxtDias.Text == "" || TxtCosto.Text == "" || (RbtnJuego.Checked == false && RbtnJuego.Checked == false)) { MessageBox.Show("ADVERTENCIA: Uno o más campos están vacíos.", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
+                if (TxtDias.Text == "" || TxtCosto.Text == "" ) { MessageBox.Show("ADVERTENCIA: Uno o más campos están vacíos.", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
                 else
                 {
-
 
                     //Mensaje de Pregunta
                     if (MessageBox.Show("¿Desea agregar una nueva Renta ?", "Renta", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != System.Windows.Forms.DialogResult.Yes) { }
                     else
                     {
 
-
                         //Se da a las variables los valores correspondientes para enviarse a la capa Controlador
                         //datos Pasaporte
-
-
-
-
 
                         Codigo_C = CodigoC.SelectedIndex + 1; ;
                         Codigo_P = CmbRentas2.SelectedIndex + 1; ;
@@ -194,11 +174,7 @@ namespace CapaVista
                         MessageBox.Show("Se ha ingresado la Renta con Éxito", "INGRESO Renta", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         funcLimpieza();
-                        funcBloqueo();
-
-                        //envío de datos hacia capa Controlador
-
-
+                        
 
                     }//fin elseif Pregunta
 
@@ -210,20 +186,9 @@ namespace CapaVista
 
 
 
-            }
-
-        private void funcDesBloqueo()
-        {
-
-            groupBox1.Enabled = false;
-            
-            TxtDias.Enabled = true;
-            TxtCosto.Enabled = true;
-            CodigoC.Enabled = true;
-            CmbRentas1.Enabled = true;
-            DtpRenta.Enabled = true;
-           
         }
+
+     
 
 
 
