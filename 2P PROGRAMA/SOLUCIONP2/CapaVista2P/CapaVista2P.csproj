@@ -52,11 +52,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmMantenimientoDepto.cs">
+    <Compile Include="frmMantenimientoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMantenimientoDepto.designer.cs">
-      <DependentUpon>frmMantenimientoDepto.cs</DependentUpon>
+    <Compile Include="frmMantenimientoCliente.designer.cs">
+      <DependentUpon>frmMantenimientoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoCategorias.designer.cs">
+      <DependentUpon>frmMantenimientoCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoJuegos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoJuegos.designer.cs">
+      <DependentUpon>frmMantenimientoJuegos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoDVD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoDVD.designer.cs">
+      <DependentUpon>frmMantenimientoDVD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRentas.designer.cs">
+      <DependentUpon>frmRentas.cs</DependentUpon>
     </Compile>
     <Compile Include="MDI.cs">
       <SubType>Form</SubType>
@@ -67,8 +91,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmMantenimientoDepto.resx">
-      <DependentUpon>frmMantenimientoDepto.cs</DependentUpon>
+    <EmbeddedResource Include="frmMantenimientoCliente.resx">
+      <DependentUpon>frmMantenimientoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoCategorias.resx">
+      <DependentUpon>frmMantenimientoCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoJuegos.resx">
+      <DependentUpon>frmMantenimientoJuegos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoDVD.resx">
+      <DependentUpon>frmMantenimientoDVD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRentas.resx">
+      <DependentUpon>frmRentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.cs</DependentUpon>
