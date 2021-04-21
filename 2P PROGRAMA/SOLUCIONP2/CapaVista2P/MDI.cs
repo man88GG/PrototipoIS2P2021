@@ -31,14 +31,14 @@ namespace CapaVista2P
             {
                 bit.user(txtUsuario.Text);
                 bit.insert("Ingreso al mantenimiento de Tipo de Departamento de la empresa", 307);
-                Form frmFormulario = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is frmMantenimientoDepto);
+                Form frmFormulario = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is frmMantenimientoDVD);
                 if (frmFormulario != null)
                 {
                     frmFormulario.BringToFront();
                     return;
                 }
 
-                frmFormulario = new frmMantenimientoDepto(txtUsuario.Text, this);
+                frmFormulario = new frmMantenimientoDVD(txtUsuario.Text, this);
                 frmFormulario.MdiParent = this;
                 frmFormulario.Show();
             }
@@ -269,5 +269,96 @@ namespace CapaVista2P
             }
         }
 
+        private void mantenimientoDVDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (seguridad.PermisosAcceso("2", txtUsuario.Text) == 1)
+            {
+                bit.user(txtUsuario.Text);
+                bit.insert("Ingreso a la aplicacion Tipo de caso", 2);
+                frmMantenimientoDVD asignacion = new frmMantenimientoDVD(txtUsuario.Text, this);
+                asignacion.MdiParent = this;
+                asignacion.Show();
+            }
+            else
+            {
+                bit.user(txtUsuario.Text);
+                bit.insert("Trato de ingresar a la aplicacion tipo de caso", 2);
+                MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
+            }
+        }
+
+        private void mantenimientoJuegosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (seguridad.PermisosAcceso("2", txtUsuario.Text) == 1)
+            {
+                bit.user(txtUsuario.Text);
+                bit.insert("Ingreso a la aplicacion Tipo de caso", 2);
+                frmMantenimientoJuegos asignacion = new frmMantenimientoJuegos(txtUsuario.Text, this);
+                asignacion.MdiParent = this;
+                asignacion.Show();
+            }
+            else
+            {
+                bit.user(txtUsuario.Text);
+                bit.insert("Trato de ingresar a la aplicacion tipo de caso", 2);
+                MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
+            }
+        }
+
+        private void mantenimientoCategoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (seguridad.PermisosAcceso("2", txtUsuario.Text) == 1)
+            {
+                bit.user(txtUsuario.Text);
+                bit.insert("Ingreso a la aplicacion Tipo de caso", 2);
+                frmMantenimientoCategorias asignacion = new frmMantenimientoCategorias(txtUsuario.Text, this);
+                asignacion.MdiParent = this;
+                asignacion.Show();
+            }
+            else
+            {
+                bit.user(txtUsuario.Text);
+                bit.insert("Trato de ingresar a la aplicacion tipo de caso", 2);
+                MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
+            }
+        }
+
+        private void mantenimientoClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (seguridad.PermisosAcceso("2", txtUsuario.Text) == 1)
+            {
+                bit.user(txtUsuario.Text);
+                bit.insert("Ingreso a la aplicacion Tipo de caso", 2);
+                frmMantenimientoClientes asignacion = new frmMantenimientoClientes();
+                asignacion.MdiParent = this;
+                asignacion.Show();
+            }
+            else
+            {
+                bit.user(txtUsuario.Text);
+                bit.insert("Trato de ingresar a la aplicacion tipo de caso", 2);
+                MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
+            }
+        }
+
+        private void rentaDVDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (seguridad.PermisosAcceso("2", txtUsuario.Text) == 1)
+            {
+                bit.user(txtUsuario.Text);
+                bit.insert("Ingreso a la aplicacion Tipo de caso", 2);
+                frmRentas asignacion = new frmRentas();
+                asignacion.MdiParent = this;
+                asignacion.Show();
+            }
+            else
+            {
+                bit.user(txtUsuario.Text);
+                bit.insert("Trato de ingresar a la aplicacion tipo de caso", 2);
+                MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
+            }
+        }
+
+      
     }
 }

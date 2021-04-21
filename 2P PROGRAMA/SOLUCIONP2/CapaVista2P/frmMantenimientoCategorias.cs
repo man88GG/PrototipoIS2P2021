@@ -10,20 +10,16 @@ using System.Windows.Forms;
 
 namespace CapaVista
 {
-    public partial class frmMantenimientoDepto : Form
+    public partial class frmMantenimientoCategorias : Form
     {
         string UsuarioAplicacion;
         static Form FormularioPadre;
-
-        public frmMantenimientoDepto(string usuario, Form formularioPadre)
+        public frmMantenimientoCategorias(string usuario, Form formularioPadre)
         {
             InitializeComponent();
-
             UsuarioAplicacion = usuario;
             navegador1.Usuario = UsuarioAplicacion;
             FormularioPadre = formularioPadre;
-            
-
         }
 
         private void rbtnActivo_CheckedChanged(object sender, EventArgs e)
@@ -65,7 +61,7 @@ namespace CapaVista
             //el numero de aplicacion se debe cambiar por el numero asignado en la base de datos 
             navegador1.aplicacion = 2;
             //banco se debe cambiar por la tabla a la que se quiere hacer el mantenimiento
-            navegador1.tbl = "departamentoempresa";
+            navegador1.tbl = "tipo";
             //estado_banco se debe cambiar por el estado de la tabla a la que se desea hacer mantenimiento
             navegador1.campoEstado = "estado";
             navegador1.MDIformulario = FormularioPadre;
@@ -92,9 +88,14 @@ namespace CapaVista
             navegador1.control = lista;
             navegador1.formulario = this;
             //el dataGridView1 se debe cambiar por el que se tiene en el formulario
-            navegador1.DatosActualizar = dgvDepartamentos;
+            navegador1.DatosActualizar = dgvPuestos;
             navegador1.procActualizarData();
             navegador1.procCargar();
+        
         }
     }
+
+
+
+
 }

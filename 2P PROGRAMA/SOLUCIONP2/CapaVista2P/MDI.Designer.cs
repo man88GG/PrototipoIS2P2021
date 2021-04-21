@@ -34,7 +34,6 @@ namespace CapaVista2P
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catalogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.departamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +48,12 @@ namespace CapaVista2P
             this.asignaciónDePermisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.mantenimientoDVDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoJuegosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoCategoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rentaDVDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.detalleAnualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,14 +62,14 @@ namespace CapaVista2P
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inicioToolStripMenuItem,
-            this.catalogoToolStripMenuItem,
             this.procesosToolStripMenuItem,
+            this.catalogoToolStripMenuItem,
             this.informesToolStripMenuItem,
             this.herramientasToolStripMenuItem,
             this.ayudasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1116, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(1116, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -79,35 +84,35 @@ namespace CapaVista2P
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesión";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
             // catalogoToolStripMenuItem
             // 
+            this.catalogoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rentaDVDToolStripMenuItem});
             this.catalogoToolStripMenuItem.Name = "catalogoToolStripMenuItem";
-            this.catalogoToolStripMenuItem.Size = new System.Drawing.Size(75, 21);
-            this.catalogoToolStripMenuItem.Text = "Catalogo";
+            this.catalogoToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.catalogoToolStripMenuItem.Text = "Procesos";
             // 
             // procesosToolStripMenuItem
             // 
             this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.departamentosToolStripMenuItem});
+            this.mantenimientoDVDToolStripMenuItem,
+            this.mantenimientoJuegosToolStripMenuItem,
+            this.mantenimientoCategoriasToolStripMenuItem,
+            this.mantenimientoClientesToolStripMenuItem});
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(75, 21);
-            this.procesosToolStripMenuItem.Text = "Procesos";
-            // 
-            // departamentosToolStripMenuItem
-            // 
-            this.departamentosToolStripMenuItem.Name = "departamentosToolStripMenuItem";
-            this.departamentosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.departamentosToolStripMenuItem.Text = "Departamentos";
-            this.departamentosToolStripMenuItem.Click += new System.EventHandler(this.departamentosToolStripMenuItem_Click);
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.procesosToolStripMenuItem.Text = "Catalogo";
             // 
             // informesToolStripMenuItem
             // 
+            this.informesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.detalleAnualToolStripMenuItem});
             this.informesToolStripMenuItem.Name = "informesToolStripMenuItem";
-            this.informesToolStripMenuItem.Size = new System.Drawing.Size(73, 21);
+            this.informesToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.informesToolStripMenuItem.Text = "Informes";
             // 
             // herramientasToolStripMenuItem
@@ -129,7 +134,7 @@ namespace CapaVista2P
             this.perfilToolStripMenuItem,
             this.asignaciónDePermisosToolStripMenuItem});
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
-            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.seguridadToolStripMenuItem.Text = "Seguridad";
             // 
             // cambioDeContraseñaToolStripMenuItem
@@ -212,6 +217,47 @@ namespace CapaVista2P
             this.txtUsuario.Size = new System.Drawing.Size(221, 22);
             this.txtUsuario.TabIndex = 3;
             // 
+            // mantenimientoDVDToolStripMenuItem
+            // 
+            this.mantenimientoDVDToolStripMenuItem.Name = "mantenimientoDVDToolStripMenuItem";
+            this.mantenimientoDVDToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.mantenimientoDVDToolStripMenuItem.Text = "Mantenimiento DVD";
+            this.mantenimientoDVDToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoDVDToolStripMenuItem_Click);
+            // 
+            // mantenimientoJuegosToolStripMenuItem
+            // 
+            this.mantenimientoJuegosToolStripMenuItem.Name = "mantenimientoJuegosToolStripMenuItem";
+            this.mantenimientoJuegosToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.mantenimientoJuegosToolStripMenuItem.Text = "Mantenimiento Juegos";
+            this.mantenimientoJuegosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoJuegosToolStripMenuItem_Click);
+            // 
+            // mantenimientoCategoriasToolStripMenuItem
+            // 
+            this.mantenimientoCategoriasToolStripMenuItem.Name = "mantenimientoCategoriasToolStripMenuItem";
+            this.mantenimientoCategoriasToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.mantenimientoCategoriasToolStripMenuItem.Text = "Mantenimiento Categorias";
+            this.mantenimientoCategoriasToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoCategoriasToolStripMenuItem_Click);
+            // 
+            // mantenimientoClientesToolStripMenuItem
+            // 
+            this.mantenimientoClientesToolStripMenuItem.Name = "mantenimientoClientesToolStripMenuItem";
+            this.mantenimientoClientesToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.mantenimientoClientesToolStripMenuItem.Text = "Mantenimiento Clientes";
+            this.mantenimientoClientesToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoClientesToolStripMenuItem_Click);
+            // 
+            // rentaDVDToolStripMenuItem
+            // 
+            this.rentaDVDToolStripMenuItem.Name = "rentaDVDToolStripMenuItem";
+            this.rentaDVDToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.rentaDVDToolStripMenuItem.Text = "Rentas";
+            this.rentaDVDToolStripMenuItem.Click += new System.EventHandler(this.rentaDVDToolStripMenuItem_Click);
+            // 
+            // detalleAnualToolStripMenuItem
+            // 
+            this.detalleAnualToolStripMenuItem.Name = "detalleAnualToolStripMenuItem";
+            this.detalleAnualToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.detalleAnualToolStripMenuItem.Text = "Detalle Anual";
+            // 
             // MDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -241,7 +287,6 @@ namespace CapaVista2P
         private System.Windows.Forms.ToolStripMenuItem informesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem departamentosToolStripMenuItem;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cambioDeContraseñaToolStripMenuItem;
@@ -254,5 +299,11 @@ namespace CapaVista2P
         private System.Windows.Forms.ToolStripMenuItem asignacionDeAplicacionesAPerfilesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asignaciónDePermisosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoDVDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoJuegosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoCategoriasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoClientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rentaDVDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem detalleAnualToolStripMenuItem;
     }
 }
