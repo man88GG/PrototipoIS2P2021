@@ -64,7 +64,7 @@ namespace CapaVista2P
             this.ayudasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1116, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1116, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -73,20 +73,20 @@ namespace CapaVista2P
             this.inicioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cerrarSesionToolStripMenuItem});
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
-            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(52, 21);
             this.inicioToolStripMenuItem.Text = "Inicio";
             // 
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesión";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
             // catalogoToolStripMenuItem
             // 
             this.catalogoToolStripMenuItem.Name = "catalogoToolStripMenuItem";
-            this.catalogoToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.catalogoToolStripMenuItem.Size = new System.Drawing.Size(75, 21);
             this.catalogoToolStripMenuItem.Text = "Catalogo";
             // 
             // procesosToolStripMenuItem
@@ -94,20 +94,20 @@ namespace CapaVista2P
             this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.departamentosToolStripMenuItem});
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(75, 21);
             this.procesosToolStripMenuItem.Text = "Procesos";
             // 
             // departamentosToolStripMenuItem
             // 
             this.departamentosToolStripMenuItem.Name = "departamentosToolStripMenuItem";
-            this.departamentosToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.departamentosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.departamentosToolStripMenuItem.Text = "Departamentos";
             this.departamentosToolStripMenuItem.Click += new System.EventHandler(this.departamentosToolStripMenuItem_Click);
             // 
             // informesToolStripMenuItem
             // 
             this.informesToolStripMenuItem.Name = "informesToolStripMenuItem";
-            this.informesToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.informesToolStripMenuItem.Size = new System.Drawing.Size(73, 21);
             this.informesToolStripMenuItem.Text = "Informes";
             // 
             // herramientasToolStripMenuItem
@@ -115,8 +115,8 @@ namespace CapaVista2P
             this.herramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.seguridadToolStripMenuItem});
             this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
-            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
-            this.herramientasToolStripMenuItem.Text = "Herramientas";
+            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(82, 21);
+            this.herramientasToolStripMenuItem.Text = "Seguridad";
             // 
             // seguridadToolStripMenuItem
             // 
@@ -200,16 +200,16 @@ namespace CapaVista2P
             // ayudasToolStripMenuItem
             // 
             this.ayudasToolStripMenuItem.Name = "ayudasToolStripMenuItem";
-            this.ayudasToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.ayudasToolStripMenuItem.Size = new System.Drawing.Size(64, 21);
             this.ayudasToolStripMenuItem.Text = "Ayudas";
             // 
             // txtUsuario
             // 
             this.txtUsuario.Enabled = false;
-            this.txtUsuario.Location = new System.Drawing.Point(455, 3);
+            this.txtUsuario.Location = new System.Drawing.Point(895, 3);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.ReadOnly = true;
-            this.txtUsuario.Size = new System.Drawing.Size(159, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(221, 22);
             this.txtUsuario.TabIndex = 3;
             // 
             // MDI
@@ -222,7 +222,7 @@ namespace CapaVista2P
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MDI";
-            this.Text = "MDI";
+            this.Text = "Antonio Manuel Alejandro García González 0901-17-65";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MDI_Load);
             this.menuStrip1.ResumeLayout(false);
