@@ -16,3 +16,9 @@ C:\Users\opfug\Estructura2Parcial\2P PROGRAMA\SOLUCIONP2\CapaModelo2P\obj\Debug\
 C:\Users\opfug\Estructura2Parcial\2P PROGRAMA\SOLUCIONP2\CapaModelo2P\obj\Debug\CapaModelo2P.csproj.CoreCompileInputs.cache
 C:\Users\opfug\Estructura2Parcial\2P PROGRAMA\SOLUCIONP2\CapaModelo2P\obj\Debug\CapaModelo2P.dll
 C:\Users\opfug\Estructura2Parcial\2P PROGRAMA\SOLUCIONP2\CapaModelo2P\obj\Debug\CapaModelo2P.pdb
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaModelo2P\bin\Debug\CapaModelo2P.dll
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaModelo2P\bin\Debug\CapaModelo2P.pdb
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaModelo2P\obj\Debug\CapaModelo2P.csprojAssemblyReference.cache
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaModelo2P\obj\Debug\CapaModelo2P.csproj.CoreCompileInputs.cache
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaModelo2P\obj\Debug\CapaModelo2P.dll
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaModelo2P\obj\Debug\CapaModelo2P.pdb

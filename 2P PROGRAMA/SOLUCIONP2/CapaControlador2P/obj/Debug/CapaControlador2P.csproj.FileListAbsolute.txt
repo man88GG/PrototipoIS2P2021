@@ -25,3 +25,12 @@ C:\Users\opfug\Estructura2Parcial\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\obj\D
 C:\Users\opfug\Estructura2Parcial\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\obj\Debug\CapaControlador2P.csproj.CopyComplete
 C:\Users\opfug\Estructura2Parcial\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\obj\Debug\CapaControlador2P.dll
 C:\Users\opfug\Estructura2Parcial\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\obj\Debug\CapaControlador2P.pdb
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\bin\Debug\CapaControlador2P.dll
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\bin\Debug\CapaControlador2P.pdb
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\bin\Debug\CapaModelo2P.dll
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\bin\Debug\CapaModelo2P.pdb
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\obj\Debug\CapaControlador2P.csprojAssemblyReference.cache
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\obj\Debug\CapaControlador2P.csproj.CoreCompileInputs.cache
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\obj\Debug\CapaControlador2P.csproj.CopyComplete
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\obj\Debug\CapaControlador2P.dll
+C:\Users\opfug\PrototipoIS2P2021\2P PROGRAMA\SOLUCIONP2\CapaControlador2P\obj\Debug\CapaControlador2P.pdb
