@@ -40,9 +40,6 @@ namespace CapaVista
         }
 
 
-       
-
-
 
         private void rbtnActivo_CheckedChanged(object sender, EventArgs e)
         {

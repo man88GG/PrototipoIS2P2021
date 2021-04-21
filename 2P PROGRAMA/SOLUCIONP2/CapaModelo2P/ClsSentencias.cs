@@ -72,7 +72,7 @@ namespace CapaModelo2P
             DataTable Datos = new DataTable();
             try
             {
-                string CargaTipoPass = "SELECT * FROM JUEGOS";
+                string CargaTipoPass = "SELECT * FROM DVD";
                 OdbcCommand Query_Busqueda1 = new OdbcCommand(CargaTipoPass, Con.conexion());
 
                 OdbcDataAdapter Lector = new OdbcDataAdapter();
@@ -98,7 +98,7 @@ namespace CapaModelo2P
             DataTable Datos = new DataTable();
             try
             {
-                string CargaTipoPass = "SELECT * FROM DVD";
+                string CargaTipoPass = "SELECT * FROM JUEGOS";
                 OdbcCommand Query_Busqueda1 = new OdbcCommand(CargaTipoPass, Con.conexion());
 
                 OdbcDataAdapter Lector = new OdbcDataAdapter();
